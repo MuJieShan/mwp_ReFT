@@ -384,6 +384,7 @@ def evaluate_generation(args, model, dataset, dataloader, tokenizer):
 
 def main(args):
     set_seed(args['seed'] + accelerator.process_index)
+    wandb.login(key="6c856bc3c0cadfd6a8606913cc31c19e07f670aa")
     if torch.distributed.get_rank() == 0 and args['wandb_log']:
         wandb.init(project=args['wandb_project'], name=args['wandb_run_name'])
         wandb.config.update(args)

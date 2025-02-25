@@ -15,7 +15,7 @@ model_dir="ppo_paper_final_new/_models_outputs_sft_small/${exp_name}/"
 wandb_run_name="${exp_name}"
 wandb_log="True"
 wandb_project="ReFT_small"
-n_epochs="40"
+n_epochs="4"
 num_workers="8"
 learning_rate="2e-5"
 weight_decay="0"
@@ -30,8 +30,8 @@ saving_step_freq="-100"
 seed="42"
 max_input_length="1024"
 
-num_processes='8'
-main_process_port='8888'
+num_processes='2'
+main_process_port='6006'
 
 mkdir -p "${model_dir}"
 accelerate launch \

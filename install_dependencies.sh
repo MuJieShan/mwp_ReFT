@@ -13,4 +13,4 @@ pip3 install scipy==1.11.4
 pip3 install prettytable==3.9.0
 pip3 install pebble==5.0.6
 
-#sudo apt-get update && sudo apt-get install ffmpeg libsm6 libxext6  -y
+sudo apt-get update && sudo apt-get install ffmpeg libsm6 libxext6  -y
